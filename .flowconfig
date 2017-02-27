@@ -9,6 +9,3 @@
 ./decls/jest.js
 ./decls/stylelint.js
 ./decls/postcss.js
-
-[options]
-module.ignore_non_literal_requires=true

@@ -26,7 +26,9 @@
   "bin": "bin/stylelint.js",
   "files": [
     "bin",
+    "CHANGELOG.md",
     "CONTRIBUTING.md",
+    "decls",
     "docs",
     "lib",
     "!**/__tests__"
