@@ -45,13 +45,13 @@ global.testRule = (rule, schema) => {
               syntax: schema.syntax,
             }).then((output) => {
               const warning = output.results[0].warnings[0]
-              if (testCase.message) {
+              if (testCase.message !== undefined) {
                 expect(_.get(warning, "text")).toBe(testCase.message)
               }
-              if (testCase.line) {
+              if (testCase.line !== undefined) {
                 expect(_.get(warning, "line")).toBe(testCase.line)
               }
-              if (testCase.column) {
+              if (testCase.column !== undefined) {
                 expect(_.get(warning, "column")).toBe(testCase.column)
               }
             })
